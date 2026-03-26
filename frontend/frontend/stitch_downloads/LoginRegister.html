@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Authentication | The Academic Lens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8f9ff",
+              "tertiary-container": "#3c2700",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ad8d5b",
+              "tertiary-fixed": "#ffdead",
+              "on-tertiary-fixed": "#281900",
+              "background": "#f8f9ff",
+              "tertiary": "#211400",
+              "surface-container-low": "#eff4ff",
+              "surface": "#f8f9ff",
+              "surface-dim": "#cbdbf5",
+              "primary-fixed": "#d7e2ff",
+              "on-primary-fixed": "#081b38",
+              "primary-container": "#1a2b48",
+              "inverse-primary": "#b6c7eb",
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#eaf1ff",
+              "surface-container-highest": "#d3e4fe",
+              "outline": "#75777e",
+              "secondary-fixed": "#d8e2ff",
+              "on-secondary-container": "#fefcff",
+              "on-background": "#0b1c30",
+              "secondary-container": "#2170e4",
+              "tertiary-fixed-dim": "#e5c18a",
+              "primary-fixed-dim": "#b6c7eb",
+              "on-error-container": "#93000a",
+              "surface-variant": "#d3e4fe",
+              "on-primary-fixed-variant": "#374765",
+              "outline-variant": "#c5c6ce",
+              "on-surface": "#0b1c30",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary": "#031632",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#213145",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#001a42",
+              "on-secondary-fixed-variant": "#004395",
+              "secondary": "#0058be",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "surface-container": "#e5eeff",
+              "surface-tint": "#4e5f7e",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#dce9ff",
+              "on-primary-container": "#8293b5",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .tonal-transition {
+        transition: background-color 0.3s ease;
+      }
+      .ghost-border {
+        border: 1px solid rgba(197, 198, 206, 0.15);
+      }
+      .ghost-border:focus-within {
+        border-color: #0058be;
+        box-shadow: 0 0 0 4px rgba(0, 88, 190, 0.1);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary/20 min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<!-- Determined active state: None for Auth page to prioritize content canvas, but TopNavBar is requested -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-slate-900/5 tonal-transition">
+<div class="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-manrope font-extrabold text-slate-900 dark:text-slate-50">The Academic Lens</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Directory</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Mentorship</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Events</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Jobs</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-slate-100/50 dark:bg-slate-800/50 rounded-full px-4 py-1.5 gap-2">
+<span class="material-symbols-outlined text-slate-500 text-sm">search</span>
+<input class="bg-transparent border-none text-sm focus:ring-0 w-32 focus:w-48 transition-all duration-300" placeholder="Search network..." type="text"/>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-slate-500 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-full transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-full transition-all">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="ml-2 px-5 py-2 bg-blue-700 text-white font-manrope font-bold rounded-lg hover:scale-95 duration-200 ease-in-out">
+                        Dashboard
+                    </button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col md:flex-row items-stretch pt-20">
+<!-- Left Column: Branding/Imagery (Asymmetric Layout) -->
+<div class="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-primary items-center justify-center p-20">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="Modern architectural view of a university campus library with large glass windows reflecting a sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHXP4gVhZ8IUqHxuFzD5p85fbhPNXxsTfNL-EwdHOS8zAux60KRZ4kce4xJ-TMrV0F456eEd8qChKahr6mmzIsuJPNd9ls8a6zKG4AnzjFP1YCA1xoHXeKx5ryyTxov7paWcNf-s7eA9xpmDJij2BOhqBQpn_YvbbSM-s8saCRFf60aKjnjgQCkdz9nqvFQIsWa_-MKlX8UE69ScnRnNXmjsrT9-hp1PrGrYMidWkH-7wT-qNj156zmccAVNvSjYW_I1Tpnnw_s2C"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 max-w-lg">
+<h1 class="font-headline text-5xl font-extrabold text-white leading-tight mb-6">
+                    The Distinguished <span class="text-secondary">Network</span>
+</h1>
+<p class="text-on-primary-container text-lg leading-relaxed mb-8">
+                    Connect with thousands of alumni worldwide. Access exclusive career opportunities, mentorship programs, and academic resources curated for your professional journey.
+                </p>
+<div class="flex gap-4">
+<div class="flex -space-x-3">
+<img class="w-12 h-12 rounded-full border-2 border-primary object-cover" data-alt="Close-up portrait of a professional male alumnus in a blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW7BdWKgvL7fl0wAI91VXCCOKgSVb5VRzjKI3645nqlKTrgBIHB6cdj0RHn9dTnTZzEW97F0jQLgakpfjL00zaJQR-dyf3CIuNH5rlbkuXVzJWkIwkGcFDmE-4fGq2n3tKArspsjMWylRXCXL23DPD3Cp8di2a4tU-UhDNl3iSQSdyML8zfaT1jECIpEZg3DDj4QpL4o0tc_7NjXEKZBLNNML3E-ZVQTu8IOWGEOANKNCi0HGps1nLgXv0VAou2yG1zTI7cHmamELm"/>
+<img class="w-12 h-12 rounded-full border-2 border-primary object-cover" data-alt="Professional female alumna smiling warmly in an office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ehfrD7ExWBHXDe4tCmUyWIkBxrulKw7SFTVlXHZkJgBNK5fUTOr7viVUCoP1hxY5C_2ckHdu2CvZmsBOWpxkcerI6Va_hgMXPjgCndruo06LKMvTIsmeJmZVz-7rQYwr3a9mEpl4IyiTsfqabhjkUUnigiimL2lvsIA56PAAXiGJL4hBeJzOsevcGRpe1b1SyoP4xT90FVrrbv0C0WVqk_qor6gsG5SM56nZu4Vt4TGhYZsWAfSjk5a1DGiVgQkqBGdTiNaydNbo"/>
+<img class="w-12 h-12 rounded-full border-2 border-primary object-cover" data-alt="Confident young male student with glasses in a campus environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkKFUTq9fxbaH9iUqA6NfETtQxADv0Yh2dUAT4Qy0cIBntRCPKhJwvg39WcSaENhwmJUrPPuNmp08RPWp0VPEufyseQlcwIVEqFzqtlWoSiWivvaevccr-Lz3xM6W0oaW6sWKJuVL2T8Qx67NXdxHMv43qdnniFF_VdVDb3hbcRhptizzRORaFpVYdMJ-iOqNWN5KtBw-xq9KSFfFr6wlbQLatHk8BAzlrUcXcYpQL9z7EqRxPwZNmxfj5awV61KaKP_VlY3Faz6Sm"/>
+</div>
+<div class="flex flex-col justify-center">
+<span class="text-white font-bold text-sm">Join 12,000+ members</span>
+<span class="text-on-primary-container text-xs">Growing university ecosystem</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Auth Form -->
+<div class="w-full lg:w-1/2 bg-surface-bright flex items-center justify-center p-8 md:p-16">
+<div class="w-full max-w-md space-y-10">
+<!-- Toggle Header -->
+<div class="space-y-4">
+<h2 class="font-headline text-3xl font-bold text-on-surface">Welcome back</h2>
+<p class="text-on-surface-variant font-body">Choose your entry path to the portal.</p>
+</div>
+<!-- Role Selection (Asymmetric Chips) -->
+<div class="space-y-4">
+<label class="font-headline text-sm font-bold tracking-tight text-on-surface block uppercase">I am a...</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2.5 rounded-md border-none bg-secondary text-white font-headline font-semibold text-sm transition-all duration-200 hover:translate-x-1 shadow-sm shadow-blue-900/10">
+                            Alumni
+                        </button>
+<button class="px-6 py-2.5 rounded-md border-none bg-surface-container-low text-secondary font-headline font-semibold text-sm transition-all duration-200 hover:bg-surface-container-high">
+                            Student
+                        </button>
+<button class="px-6 py-2.5 rounded-md border-none bg-surface-container-low text-secondary font-headline font-semibold text-sm transition-all duration-200 hover:bg-surface-container-high">
+                            Admin
+                        </button>
+</div>
+</div>
+<!-- Authentication Form -->
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-headline text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="email">Email Address</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-secondary transition-colors text-xl">alternate_email</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-lowest ghost-border rounded-lg font-body focus:ring-0 focus:outline-none transition-all duration-300" id="email" placeholder="name@university.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-headline text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="password">Password</label>
+<a class="text-xs font-bold text-secondary hover:underline underline-offset-4 decoration-2" href="#">Forgot Password?</a>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-secondary transition-colors text-xl">lock</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-lowest ghost-border rounded-lg font-body focus:ring-0 focus:outline-none transition-all duration-300" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-secondary" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</button>
+</div>
+</div>
+<div class="pt-4 space-y-4">
+<button class="w-full py-4 bg-secondary text-white font-headline font-bold rounded-md hover:bg-primary-container transition-all duration-300 transform active:scale-[0.98] shadow-lg shadow-blue-900/10" type="submit">
+                            Sign In to Portal
+                        </button>
+<div class="relative py-2">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200"></div></div>
+<div class="relative flex justify-center text-xs uppercase"><span class="bg-surface-bright px-2 text-on-surface-variant font-bold">New to the network?</span></div>
+</div>
+<button class="w-full py-4 bg-surface-container-low text-secondary font-headline font-bold rounded-md hover:bg-surface-container-high transition-all duration-300 transform active:scale-[0.98]" type="button">
+                            Create Alumni Account
+                        </button>
+</div>
+</form>
+<!-- Trust Signal -->
+<div class="flex items-center justify-center gap-2 pt-8 opacity-60">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">SSO Secured • University Standard Encryption</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-slate-900 dark:bg-black w-full py-12 px-8 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-manrope text-white font-bold text-lg">The Academic Lens</span>
+<p class="font-inter text-xs text-slate-400">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity duration-300 hover:underline decoration-blue-500 underline-offset-4" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity duration-300 hover:underline decoration-blue-500 underline-offset-4" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity duration-300 hover:underline decoration-blue-500 underline-offset-4" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity duration-300 hover:underline decoration-blue-500 underline-offset-4" href="#">Alumni Giving</a>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-lg">public</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-lg">groups</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

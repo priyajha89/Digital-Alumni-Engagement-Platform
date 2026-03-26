@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard | The Academic Lens</title>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8f9ff",
+              "tertiary-container": "#3c2700",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ad8d5b",
+              "tertiary-fixed": "#ffdead",
+              "on-tertiary-fixed": "#281900",
+              "background": "#f8f9ff",
+              "tertiary": "#211400",
+              "surface-container-low": "#eff4ff",
+              "surface": "#f8f9ff",
+              "surface-dim": "#cbdbf5",
+              "primary-fixed": "#d7e2ff",
+              "on-primary-fixed": "#081b38",
+              "primary-container": "#1a2b48",
+              "inverse-primary": "#b6c7eb",
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#eaf1ff",
+              "surface-container-highest": "#d3e4fe",
+              "outline": "#75777e",
+              "secondary-fixed": "#d8e2ff",
+              "on-secondary-container": "#fefcff",
+              "on-background": "#0b1c30",
+              "secondary-container": "#2170e4",
+              "tertiary-fixed-dim": "#e5c18a",
+              "primary-fixed-dim": "#b6c7eb",
+              "on-error-container": "#93000a",
+              "surface-variant": "#d3e4fe",
+              "on-primary-fixed-variant": "#374765",
+              "outline-variant": "#c5c6ce",
+              "on-surface": "#0b1c30",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary": "#031632",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#213145",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#001a42",
+              "on-secondary-fixed-variant": "#004395",
+              "secondary": "#0058be",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "surface-container": "#e5eeff",
+              "surface-tint": "#4e5f7e",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#dce9ff",
+              "on-primary-container": "#8293b5",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(180deg, #f8f9ff 0%, #eff4ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<div class="flex min-h-screen">
+<!-- SideNavBar - JSON Data Applied -->
+<aside class="hidden md:flex flex-col p-6 space-y-2 h-screen w-64 bg-slate-50 dark:bg-slate-950 fixed left-0 top-0 z-40">
+<div class="mb-8">
+<h1 class="text-lg font-bold text-slate-900 dark:text-white font-headline">Alumni Portal</h1>
+<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Distinguished Network</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center space-x-3 px-4 py-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 rounded-lg shadow-sm shadow-blue-900/5 font-manrope text-sm font-semibold transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span>Directory</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span>Mentorship</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span>Events</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span>Jobs</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>Analytics</span>
+</a>
+</nav>
+<div class="mt-auto space-y-4">
+<button class="w-full py-3 px-4 bg-secondary text-on-secondary rounded-lg font-bold text-sm hover:bg-primary-container transition-colors duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                    Post a Job
+                </button>
+<div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-1">
+<a class="flex items-center space-x-3 px-4 py-2 text-slate-500 text-xs font-semibold hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="help">help</span>
+<span>Support</span>
+</a>
+<a class="flex items-center space-x-3 px-4 py-2 text-slate-500 text-xs font-semibold hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="shield">shield</span>
+<span>Privacy</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 md:ml-64 p-8 min-h-screen bg-surface-bright">
+<!-- TopAppBar Contextual -->
+<header class="flex justify-between items-center mb-10">
+<div>
+<h2 class="text-3xl font-headline font-extrabold text-primary tracking-tight">Welcome back, Dr. Aris.</h2>
+<p class="text-on-surface-variant font-medium mt-1">Class of 2018 · Department of Theoretical Physics</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="notifications">notifications</span>
+</button>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high border-2 border-white shadow-sm">
+<img alt="Alumni Profile" data-alt="close-up portrait of a distinguished academic professional with glasses and a friendly expression, soft office lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ9tazS76hkDtPQNDqLshYYH138TljndVp4hhOfKr23xvqSeNevX260cbL6IGHsPklMuvHpKmz-uhWovySa5daxjwIS96N1TwYAcTvlBczL5WfaypS7Qi1VKG0z4CI5hwY1qJ9CG8ZvFOUC9hsurgKwL6y6JyfxR14WtMSh5XkrVAdcW8R4H4nIh7HH9zhISy94r9rsix0cqKGp9EAs6L_pQA8r55K6e8kXaKIrGGT38utgt0v5Iv_ZecDEX6WHgYC0gCVIPzT7PvT"/>
+</div>
+</div>
+</header>
+<!-- Key Stats: Bento Grid Style -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+<div class="md:col-span-2 bg-primary-container p-6 rounded-xl flex flex-col justify-between text-white overflow-hidden relative group">
+<div class="relative z-10">
+<p class="text-on-primary-container font-headline font-bold text-sm uppercase tracking-widest mb-2">Network Strength</p>
+<h3 class="text-5xl font-headline font-extrabold">2,482</h3>
+<p class="text-on-primary-container mt-4 text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="trending_up">trending_up</span>
+                            +12% connection growth this month
+                        </p>
+</div>
+<div class="absolute right-[-10%] bottom-[-20%] opacity-10 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[180px]" data-icon="hub">hub</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-transparent hover:bg-surface-container-lowest transition-all duration-300">
+<div class="w-10 h-10 bg-secondary-container/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="event">event</span>
+</div>
+<p class="text-on-surface-variant font-semibold text-xs uppercase tracking-widest">Upcoming Events</p>
+<h3 class="text-3xl font-headline font-bold text-primary mt-1">04</h3>
+<p class="text-on-surface-variant text-sm mt-2">Next: Global AI Summit</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-transparent hover:bg-surface-container-lowest transition-all duration-300">
+<div class="w-10 h-10 bg-tertiary-fixed/30 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary-fixed-variant" data-icon="work">work</span>
+</div>
+<p class="text-on-surface-variant font-semibold text-xs uppercase tracking-widest">Job Alerts</p>
+<h3 class="text-3xl font-headline font-bold text-primary mt-1">18</h3>
+<p class="text-on-surface-variant text-sm mt-2">Matches for your profile</p>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+<!-- Central Activity Feed -->
+<div class="lg:col-span-2 space-y-6">
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xl font-headline font-bold text-primary">Academic Feed</h4>
+<button class="text-secondary text-sm font-bold flex items-center gap-1 hover:underline">
+                            View All <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Post 1: Success Moment -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-l-4 border-secondary transition-all">
+<div class="flex items-start gap-4 mb-4">
+<img alt="Sarah" class="w-10 h-10 rounded-full bg-slate-100" data-alt="professional headshot of a young woman with a bright smile in a corporate environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCewaPOjpSVVdFj0yBEg3EB15Q-7Z2qanpBN6FQscxPaiL-PXFD-d1yff0i742_sCAbMXj0IbUmTCIHI9SbgWo65OLplt1fmxjdqMuNrBidKhCY8CUaBeUDKb0Jm7gboHQWGHc2T1RVP9hkYRZPVfYylOFEoNny4F90sWRPGbBKyjvjqObodQs8mrZQMAjGe1_xNVpQvOlusbIKKPE0m47fxpbexiXe6G5bXYrI7kWJtumwIveAifWwCBCeMwMNHiyUMouwf63gfK3W"/>
+<div>
+<p class="text-sm font-bold text-primary">Sarah Jenkins <span class="text-on-surface-variant font-normal">published a new research paper</span></p>
+<p class="text-xs text-on-surface-variant">2 hours ago · Environmental Science</p>
+</div>
+</div>
+<h5 class="text-lg font-headline font-bold text-primary mb-2 leading-tight">Quantifying the Impact of Urban Green Spaces on Thermal Regulation</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">Our latest study published in Nature reveals a 3.4°C cooling effect in metropolitan hubs with prioritized canopy growth...</p>
+<div class="mt-4 flex items-center gap-6">
+<button class="flex items-center gap-1 text-on-surface-variant text-xs font-semibold hover:text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="thumb_up">thumb_up</span> 142
+                            </button>
+<button class="flex items-center gap-1 text-on-surface-variant text-xs font-semibold hover:text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="chat_bubble">chat_bubble</span> 24
+                            </button>
+<button class="flex items-center gap-1 text-on-surface-variant text-xs font-semibold hover:text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span> Share
+                            </button>
+</div>
+</div>
+<!-- Post 2: Career Update (Tertiary Highlight) -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm transition-all border border-tertiary/5">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-10 h-10 rounded-full bg-tertiary flex items-center justify-center text-white">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Milestone Reached</p>
+<p class="text-xs text-on-surface-variant">5 hours ago</p>
+</div>
+</div>
+<p class="text-primary font-medium">Your connection <span class="font-bold">Marcus Thorne</span> started a new position as <span class="text-secondary font-bold">Principal Architect</span> at Foster + Partners.</p>
+<div class="mt-4 p-4 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface-variant">Send your congratulations</span>
+<button class="px-4 py-1.5 bg-secondary text-on-secondary text-xs font-bold rounded hover:bg-primary-container transition-colors">Congratulate</button>
+</div>
+</div>
+<!-- Post 3: University Event -->
+<div class="group relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden h-64 flex flex-col justify-end p-6">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="a blurred background of a modern auditorium stage with warm lighting during a university conference" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqdbbVt1r7N4zIuwpwfUuzVh1zDaNpC2EoOtvQ1-kDQcqTVBqr_nIPLt2B8wwKJC1D8sys715jpCdnR77BNtvWKrAW-v_7HEmLRQuIoJImd8AqxWB9CbFytL52PMFBLVKgKOcdOHLt2WXl5HBcfLadHicpHiQdeZqEEkLcwE_brE3gjeDl2njRI6Vd2fw9SNeOiKUIo7dfd0v0q_P4VSQapEZTFtSWe4sJnynvKyQ9QDLB9_TBQwk0I6gb0bDOSs1TEQ3EAFx4GRH4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="relative z-10 text-white">
+<span class="px-2 py-1 bg-secondary text-[10px] font-bold uppercase rounded-sm mb-2 inline-block">University Highlight</span>
+<h5 class="text-2xl font-headline font-bold mb-2">The Annual Alumni Gala 2024</h5>
+<p class="text-sm opacity-80 mb-4">Reconnect, Reminisce, and Reinvigorate our shared legacy this November.</p>
+<button class="w-max px-6 py-2 bg-white text-primary text-sm font-bold rounded-md hover:bg-slate-100 transition-colors">Register Interest</button>
+</div>
+</div>
+</div>
+<!-- Quick Actions & Sidebar -->
+<aside class="space-y-8">
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<h4 class="text-sm font-headline font-extrabold text-primary uppercase tracking-widest mb-6 border-b border-slate-100 pb-2">Quick Actions</h4>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex flex-col items-center justify-center p-4 bg-surface-container-low rounded-lg hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-2 group-hover:scale-110 transition-transform" data-icon="person_add">person_add</span>
+<span class="text-[11px] font-bold text-primary">Find Mentor</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 bg-surface-container-low rounded-lg hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-2 group-hover:scale-110 transition-transform" data-icon="post_add">post_add</span>
+<span class="text-[11px] font-bold text-primary">Post Story</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 bg-surface-container-low rounded-lg hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-2 group-hover:scale-110 transition-transform" data-icon="payments">payments</span>
+<span class="text-[11px] font-bold text-primary">Donate</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 bg-surface-container-low rounded-lg hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary mb-2 group-hover:scale-110 transition-transform" data-icon="history_edu">history_edu</span>
+<span class="text-[11px] font-bold text-primary">Request Transcript</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<h4 class="text-sm font-headline font-extrabold text-primary uppercase tracking-widest mb-4">Recommended Mentors</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Mentor" class="w-10 h-10 rounded-full" data-alt="professional portrait of an older gentleman with gray hair, looking experienced and approachable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3S0SSYpE4ugd9LqPVHU3a_yMeQ_u5nXrRDBHl78DZ5faOKLagdERC3TFF1y5pStiZ2dcoaoovLlS32lTVQA6ixjiKTrfVAi9BQHRLD9u1gxtmba5mH_A_-JAp2xoxq32i6iTa4SCID55pQNjIBAaZVbRKdCF3se2Vm7iKwPR27FW7XO8xNwL47S2jQc9mg8QYmSTo2-Q0tYColMznqxAPa04j-3sHTVXglELsXFTcSAe-RtC07DDlbxHll536fBiQUoipGU7CI91"/>
+<div>
+<p class="text-xs font-bold text-primary">Dr. Thomas Wu</p>
+<p class="text-[10px] text-on-surface-variant">Senior VP, Quantum Labs</p>
+</div>
+<button class="ml-auto text-secondary text-xs font-bold">Connect</button>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Mentor" class="w-10 h-10 rounded-full" data-alt="close up of a professional woman with a confident gaze, neutral grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8hDgvo_LJYaNJf3aYAPl-1vhwbXfGQyte6eDfaIYkYtryYaX4fivKNGjaz_ELxaAKTWRj5EFX-7Qjjj3bC9l9Mkr2u1nVkK3qXhgAzFYmi-l6CkEZ1WzalBDutWG4nSX2BW_48QARNXs79PA2yWLZJ-yl83pJBBh2Jp3OSmyUwDCAOCpH6fe-Omr-zPgUu2fNQ6lgJ-Sa7qfZLzpYiQfg7bSNzoowkGdzsLbliAkAJpuZYZ-dsv2JNOQ-64kkX_PY636HyK3fGJH7"/>
+<div>
+<p class="text-xs font-bold text-primary">Elena Rodriguez</p>
+<p class="text-[10px] text-on-surface-variant">Director of UX, Horizon</p>
+</div>
+<button class="ml-auto text-secondary text-xs font-bold">Connect</button>
+</div>
+</div>
+<button class="w-full mt-6 py-2 border border-outline-variant/30 rounded text-xs font-bold text-primary hover:bg-surface-container-high transition-colors">View Directory</button>
+</div>
+</aside>
+</div>
+</main>
+</div>
+<!-- Footer - JSON Data Applied -->
+<footer class="bg-slate-900 dark:bg-black w-full py-12 px-8 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
+<div>
+<span class="font-manrope text-white font-bold text-xl">The Academic Lens</span>
+<p class="font-inter text-xs text-slate-400 mt-2">Empowering the global alumni network through excellence.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity duration-300 opacity-80 hover:opacity-100" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity duration-300 opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity duration-300 opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity duration-300 opacity-80 hover:opacity-100" href="#">Alumni Giving</a>
+</div>
+<p class="font-inter text-xs text-slate-400">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

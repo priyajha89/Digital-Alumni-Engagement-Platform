@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jobs &amp; Internships | The Academic Lens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-transition {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-bright": "#f8f9ff",
+                "tertiary-container": "#3c2700",
+                "error": "#ba1a1a",
+                "on-tertiary-container": "#ad8d5b",
+                "tertiary-fixed": "#ffdead",
+                "on-tertiary-fixed": "#281900",
+                "background": "#f8f9ff",
+                "tertiary": "#211400",
+                "surface-container-low": "#eff4ff",
+                "surface": "#f8f9ff",
+                "surface-dim": "#cbdbf5",
+                "primary-fixed": "#d7e2ff",
+                "on-primary-fixed": "#081b38",
+                "primary-container": "#1a2b48",
+                "inverse-primary": "#b6c7eb",
+                "on-surface-variant": "#44474d",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#eaf1ff",
+                "surface-container-highest": "#d3e4fe",
+                "outline": "#75777e",
+                "secondary-fixed": "#d8e2ff",
+                "on-secondary-container": "#fefcff",
+                "on-background": "#0b1c30",
+                "secondary-container": "#2170e4",
+                "tertiary-fixed-dim": "#e5c18a",
+                "primary-fixed-dim": "#b6c7eb",
+                "on-error-container": "#93000a",
+                "surface-variant": "#d3e4fe",
+                "on-primary-fixed-variant": "#374765",
+                "outline-variant": "#c5c6ce",
+                "on-surface": "#0b1c30",
+                "secondary-fixed-dim": "#adc6ff",
+                "primary": "#031632",
+                "on-tertiary": "#ffffff",
+                "inverse-surface": "#213145",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#001a42",
+                "on-secondary-fixed-variant": "#004395",
+                "secondary": "#0058be",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#5b4217",
+                "surface-container": "#e5eeff",
+                "surface-tint": "#4e5f7e",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#dce9ff",
+                "on-primary-container": "#8293b5",
+                "on-primary": "#ffffff"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface font-body text-on-surface flex min-h-screen">
+<!-- SideNavBar (Authority: JSON) -->
+<aside class="h-screen w-64 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 space-y-2 fixed left-0 top-0 overflow-y-auto">
+<div class="mb-8">
+<h1 class="text-lg font-bold text-slate-900 dark:text-white font-headline">Alumni Portal</h1>
+<p class="text-xs text-slate-500 font-medium">Distinguished Network</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span>Directory</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span>Mentorship</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span>Events</span>
+</a>
+<!-- Active State: Jobs -->
+<a class="flex items-center space-x-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 rounded-lg shadow-sm shadow-blue-900/5 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="work" data-weight="fill" style="font-variation-settings: 'FILL' 1;">work</span>
+<span>Jobs</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>Analytics</span>
+</a>
+</nav>
+<div class="mt-auto space-y-4">
+<button class="w-full bg-secondary text-on-secondary px-4 py-3 rounded-lg font-headline font-bold text-sm shadow-sm transition-all hover:bg-primary-container active:scale-95">
+                Post a Job
+            </button>
+<div class="pt-4 space-y-2 border-t border-slate-200 dark:border-slate-800">
+<a class="flex items-center space-x-3 text-slate-500 text-xs px-4 py-2 hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
+<span>Support</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 text-xs px-4 py-2 hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="shield">shield</span>
+<span>Privacy</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="ml-64 flex-1 min-h-screen bg-surface">
+<!-- TopAppBar (Authority: JSON) -->
+<header class="fixed top-0 right-0 left-64 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-slate-900/5 h-20 flex items-center px-8 tonal-transition">
+<div class="flex-1 flex items-center justify-between">
+<h2 class="text-2xl font-manrope font-extrabold text-slate-900 dark:text-slate-50 tracking-tight">The Academic Lens</h2>
+<div class="flex items-center space-x-8">
+<nav class="hidden md:flex space-x-6">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-all" href="#">Directory</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 transition-all" href="#">Mentorship</a>
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700 pb-1" href="#">Jobs</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="p-2 text-slate-500 hover:bg-slate-100/50 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:bg-slate-100/50 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="Alumni Profile" class="w-full h-full object-cover" data-alt="Professional headshot of a confident woman smiling in a bright office setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCzBx24LUuYuoMAoTNCT79wt2GvMG5fRgip5kDi0C4jz5LuvQw7bstkBft0TMVJGxoveZ5Hm3vn0e6i0KnU4ICKidEM-X6cGcgk74B6TSEbsP-KRZIh_6lLoPdKP2K19iT6CyzJmhO4hEM-H9OE7w5zzJ0RSKUjeS1IgRO86XVXfm0UY9GemmcSEPlKVfqp0eWgmMC2tPq_9cC6aSxY4ng_Cj4YZND12W4Y2pjUtexapUtkuywz7eL7Shonn-nsy96l7nBYG6ZrB0d"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Section -->
+<section class="mt-20 p-8 lg:p-12 max-w-7xl mx-auto">
+<!-- Editorial Hero Header -->
+<div class="mb-12">
+<span class="text-secondary font-headline font-bold tracking-widest text-xs uppercase mb-3 block">Career Network</span>
+<h1 class="text-5xl font-headline font-extrabold text-primary mb-6 leading-tight max-w-2xl">
+                    Forging the Next <span class="text-secondary">Legacy</span> in Tech &amp; Design.
+                </h1>
+<p class="text-on-surface-variant text-lg max-w-xl font-body leading-relaxed">
+                    Exclusive opportunities curated from our global alumni network. Connect directly with hiring managers who share your academic heritage.
+                </p>
+</div>
+<!-- Filters (Tonal Layering Principle) -->
+<div class="bg-surface-container-low rounded-xl p-6 mb-12 flex flex-wrap items-center gap-4">
+<div class="flex-1 min-w-[240px] relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-white border-none rounded-lg focus:ring-2 focus:ring-secondary/20 shadow-sm text-sm" placeholder="Search by role, company, or keyword" type="text"/>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 md:pb-0">
+<button class="px-5 py-2.5 bg-secondary text-on-secondary rounded-md text-sm font-semibold transition-all">All Roles</button>
+<button class="px-5 py-2.5 bg-white text-on-surface-variant hover:text-secondary rounded-md text-sm font-semibold transition-all shadow-sm">Full-time</button>
+<button class="px-5 py-2.5 bg-white text-on-surface-variant hover:text-secondary rounded-md text-sm font-semibold transition-all shadow-sm">Internship</button>
+<button class="px-5 py-2.5 bg-white text-on-surface-variant hover:text-secondary rounded-md text-sm font-semibold transition-all shadow-sm">Remote</button>
+<button class="px-5 py-2.5 bg-white text-on-surface-variant hover:text-secondary rounded-md text-sm font-semibold transition-all shadow-sm">Executive</button>
+</div>
+</div>
+<!-- Bento Grid Job Board -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Job Card 1: Featured (Double Width) -->
+<div class="md:col-span-2 bg-primary text-white rounded-xl overflow-hidden relative group p-8 flex flex-col justify-between min-h-[400px]">
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary/40 opacity-90"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2">
+<img alt="Company Logo" class="w-full h-full object-contain" data-alt="Modern minimalist blue letter logo on white background for a technology company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqDj2I37rufd2AhkzP-UCNxh5Q9kTskXK1yy8x9NCrkQBY3LecuAdnVFgDdxXOuzSGXZlmfcHAbhQE9hXxPMGm5aMVDLcahjrU6tas0fq0Asiv5eXcg_JrFn0D0lFOzIaZZBl_G8t3pocucbSNAbHrZnWa3CUEQcU3Q2Me5KfysFXs3_KM7Y_mMCyC9TBXfJM65jXe1wDvKM9fOtgKv4-QNosGWKQbQmtlcV63nRpf6PgLxy5eR1sogHwOXIUNWdCm3mQHJD_28KIJ"/>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold">Principal Product Architect</h3>
+<p class="text-on-primary-container font-medium">Stellar Systems • Alumni Led</p>
+</div>
+</div>
+<span class="bg-secondary/30 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-white/20">Featured</span>
+</div>
+<p class="text-slate-300 max-w-lg mb-8 text-lg font-body leading-relaxed">
+                            Lead the evolution of our core platform as we scale to 50M users. Seeking a visionary who understands the intersection of academic rigor and rapid iteration.
+                        </p>
+</div>
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-6 border-t border-white/10 pt-8">
+<div class="flex gap-8">
+<div>
+<p class="text-xs text-on-primary-container uppercase font-bold tracking-widest mb-1">Location</p>
+<p class="font-semibold">San Francisco, CA (Hybrid)</p>
+</div>
+<div>
+<p class="text-xs text-on-primary-container uppercase font-bold tracking-widest mb-1">Estimate</p>
+<p class="font-semibold text-secondary-fixed-dim">$180k - $240k</p>
+</div>
+</div>
+<button class="bg-secondary hover:bg-white hover:text-primary px-8 py-3 rounded-md font-headline font-extrabold transition-all transform active:scale-95">Apply Now</button>
+</div>
+</div>
+<!-- Job Card 2: standard -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all group border border-transparent hover:border-outline-variant/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center p-2">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="architecture">architecture</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full">Remote</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2 group-hover:text-secondary transition-colors">UX Research Intern</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-6">Foundry Design Lab</p>
+<p class="text-on-surface-variant text-sm font-body line-clamp-3 leading-relaxed">
+                            Join our research team for a 12-week intensive summer program focused on cognitive ergonomics and inclusive interface paradigms.
+                        </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$35 - $45 / hr</span>
+<a class="text-sm font-headline font-extrabold flex items-center gap-1 hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+<!-- Job Card 3: standard -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center p-2">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="science" data-weight="fill" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full">Full-time</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2 group-hover:text-secondary transition-colors">Senior Data Scientist</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-6">BioGenesis Analytics</p>
+<p class="text-on-surface-variant text-sm font-body line-clamp-3 leading-relaxed">
+                            Applying machine learning models to genomic data to predict therapeutic outcomes. Masters/PhD preferred.
+                        </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$145k - $170k</span>
+<a class="text-sm font-headline font-extrabold flex items-center gap-1 hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+<!-- Job Card 4: standard -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center p-2">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="newspaper">newspaper</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full">Contract</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2 group-hover:text-secondary transition-colors">Editorial Director</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-6">The Global Chronicle</p>
+<p class="text-on-surface-variant text-sm font-body line-clamp-3 leading-relaxed">
+                            Lead a team of 15 writers to produce high-impact journalism for a digital-first audience. Focus on political economy.
+                        </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$90k - $120k</span>
+<a class="text-sm font-headline font-extrabold flex items-center gap-1 hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+<!-- Job Card 5: standard -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center p-2">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="payments">payments</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full">Internship</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2 group-hover:text-secondary transition-colors">Venture Capital Analyst</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-6">Heritage Partners</p>
+<p class="text-on-surface-variant text-sm font-body line-clamp-3 leading-relaxed">
+                            Identify and vet seed-stage startups within the university ecosystem. High autonomy role.
+                        </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-sm font-bold text-secondary">$28 / hr</span>
+<a class="text-sm font-headline font-extrabold flex items-center gap-1 hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Empty State / Load More (Asymmetrical Design) -->
+<div class="mt-20 flex flex-col md:flex-row items-center justify-between bg-surface-container-high rounded-2xl p-12 overflow-hidden relative">
+<div class="relative z-10 max-w-lg">
+<h2 class="text-3xl font-headline font-extrabold text-primary mb-4">Don't see the right fit?</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        Our internal talent scouts work daily to uncover unpublished roles. Join the priority talent pool to get notified before public listing.
+                    </p>
+<button class="bg-primary text-white px-8 py-3 rounded-md font-headline font-bold shadow-lg shadow-primary/20 hover:bg-secondary transition-all">Join Talent Pool</button>
+</div>
+<div class="hidden md:block absolute right-0 top-0 h-full w-1/3 opacity-20 transform translate-x-10 translate-y-10">
+<span class="material-symbols-outlined text-[200px]" data-icon="briefcase">work</span>
+</div>
+</div>
+</section>
+<!-- Footer (Authority: JSON) -->
+<footer class="bg-slate-900 dark:bg-black w-full py-12 px-8 border-t border-slate-800">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+<div class="flex flex-col items-center md:items-start space-y-2">
+<span class="font-manrope text-white font-bold text-lg">The Academic Lens</span>
+<p class="font-inter text-xs text-slate-400">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Alumni Giving</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

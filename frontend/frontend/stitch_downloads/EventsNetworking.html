@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Academic Lens | Events &amp; Networking</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-container": "#3c2700",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#ad8d5b",
+                        "tertiary-fixed": "#ffdead",
+                        "on-tertiary-fixed": "#281900",
+                        "background": "#f8f9ff",
+                        "tertiary": "#211400",
+                        "surface-container-low": "#eff4ff",
+                        "surface": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-fixed": "#081b38",
+                        "primary-container": "#1a2b48",
+                        "inverse-primary": "#b6c7eb",
+                        "on-surface-variant": "#44474d",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "outline": "#75777e",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#fefcff",
+                        "on-background": "#0b1c30",
+                        "secondary-container": "#2170e4",
+                        "tertiary-fixed-dim": "#e5c18a",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#d3e4fe",
+                        "on-primary-fixed-variant": "#374765",
+                        "outline-variant": "#c5c6ce",
+                        "on-surface": "#0b1c30",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "primary": "#031632",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#001a42",
+                        "on-secondary-fixed-variant": "#004395",
+                        "secondary": "#0058be",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5b4217",
+                        "surface-container": "#e5eeff",
+                        "surface-tint": "#4e5f7e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-container": "#8293b5",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition { transition: background-color 0.3s ease; }
+        .glass-effect { backdrop-filter: blur(24px); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<div class="flex min-h-screen">
+<!-- SideNavBar Component -->
+<aside class="h-screen w-64 fixed left-0 top-0 z-40 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 space-y-2 border-r-0 tonal-layering">
+<div class="mb-8">
+<h1 class="text-lg font-manrope font-bold text-slate-900 dark:text-white">Alumni Portal</h1>
+<p class="text-xs font-manrope font-semibold text-slate-500">Distinguished Network</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">dashboard</span> Overview
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">group</span> Directory
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">psychology</span> Mentorship
+                </a>
+<!-- Active State: Events -->
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 rounded-lg shadow-sm shadow-blue-900/5 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event</span> Events
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">work</span> Jobs
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 hover:translate-x-1 transition-transform duration-200 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">analytics</span> Analytics
+                </a>
+</nav>
+<div class="pt-4 border-t border-slate-200 dark:border-slate-800 space-y-1">
+<button class="w-full bg-secondary text-on-secondary px-4 py-3 rounded-lg font-manrope text-sm font-bold active:scale-95 transition-all mb-4">
+                    Post a Job
+                </button>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:text-blue-600 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">help</span> Support
+                </a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:text-blue-600 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">shield</span> Privacy
+                </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-64 min-h-screen bg-surface relative">
+<!-- TopAppBar Header (Glassmorphism) -->
+<header class="fixed top-0 right-0 left-64 z-30 h-20 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-slate-900/5 flex items-center justify-between px-8">
+<div class="flex items-center gap-4">
+<h2 class="text-2xl font-manrope font-extrabold text-slate-900 dark:text-slate-50 tracking-tight">Events</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 w-64" placeholder="Search events..." type="text"/>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-on-surface-variant hover:bg-slate-100/50 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-slate-100/50 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-secondary/20">
+<img alt="Alumni Profile" class="h-full w-full object-cover" data-alt="professional headshot of an alumni member with a soft blurred university campus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVXLfi3TU19g262eZnvH_2bk8vOcGDG_kVFIa4xkbzQDtLN95U_AlM7Cx4BOpxGBDjw_d_jISkH9Eb61igvUqJIZpiQwAqV2N3mNc04tuRI495XrEdbfJX45PBluRmEpO912QoW5JKDyAgGqfu6B5c8dsHMmPdgTAsCsvZGXOFsehANNlUzGq4kdKrvV9NwHZQAxWZ8tHB-9WAnxtsvXMjq3WxVKD46qg2Tb0uh54cxE7xRBgWxPkmjy43kn353JOmGrXMov3NOOM"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Scrollable Content -->
+<div class="pt-28 pb-12 px-10">
+<!-- Hero Section: Featured Event / Donation Call Bento -->
+<div class="grid grid-cols-12 gap-6 mb-12">
+<!-- Featured Event Card -->
+<div class="col-span-12 lg:col-span-8 relative rounded-xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 group">
+<div class="absolute inset-0 z-0">
+<img alt="Featured Gala" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="elegant evening gala in a historic university hall with crystal chandeliers and people in formal attire networking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEVhAo7G4Q_Fb5i9gW32F1Gf-BIl1ujDaa--LkWzCnXmb0QQUTrIWkl5NdLa1-VB9MP4noU-Pej_r8oOO9_ekYjhemba6o1aoDHa2j5m7TN0BLUNs18ISL1Unn6WlZQai24gubuzmbjo3iBKyxYqzDeabLdjDaUBPjjUWqgT8_JAhGIN-uiGLs-Y9AQhF1yOqXKtJ-5JHc3CScWVO0boiQGnHw1iRgcoAT4qMnNYl5hg0dHwF2xeQq2K5lCk7hEWWqQ8vnGjMhfWik"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-secondary text-on-secondary text-xs font-bold rounded mb-4 tracking-wider uppercase">Annual Gala 2024</span>
+<h3 class="text-4xl md:text-5xl font-manrope font-extrabold text-white mb-4 leading-tight">The Visionary Leadership<br/>Summit &amp; Dinner</h3>
+<div class="flex flex-wrap gap-6 text-white/90 mb-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">calendar_today</span>
+<span class="text-sm font-medium">October 24, 2024</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<span class="text-sm font-medium">Grand Hall, Alumni Center</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="px-8 py-3 bg-secondary text-on-secondary rounded font-manrope font-bold hover:bg-primary-container transition-all">RSVP Now</button>
+<button class="px-8 py-3 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded font-manrope font-bold hover:bg-white/20 transition-all">View Agenda</button>
+</div>
+</div>
+</div>
+<!-- Donation Call Sidebar -->
+<div class="col-span-12 lg:col-span-4 bg-primary-container rounded-xl p-8 flex flex-col justify-between text-white">
+<div>
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+<h3 class="text-2xl font-manrope font-bold mb-3">Empower the Future</h3>
+<p class="text-on-primary-container text-sm leading-relaxed mb-6">Your contributions fund the next generation of pioneers. Help us reach our $2M goal for the Excellence Scholarship Fund.</p>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-on-primary-container">
+<span>Raised: $1.4M</span>
+<span>70%</span>
+</div>
+<div class="h-2 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[70%] rounded-full"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-4 bg-white text-primary rounded font-manrope font-extrabold hover:bg-surface-container-highest transition-all">Make a Gift</button>
+</div>
+</div>
+<!-- Filters & Controls -->
+<div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+<div>
+<h4 class="text-3xl font-manrope font-bold text-on-surface mb-2">Upcoming Events</h4>
+<div class="flex gap-4">
+<button class="text-sm font-bold text-secondary border-b-2 border-secondary pb-1">All Events</button>
+<button class="text-sm font-semibold text-on-surface-variant hover:text-secondary transition-colors pb-1">Workshops</button>
+<button class="text-sm font-semibold text-on-surface-variant hover:text-secondary transition-colors pb-1">Social</button>
+<button class="text-sm font-semibold text-on-surface-variant hover:text-secondary transition-colors pb-1">Past Events</button>
+</div>
+</div>
+<div class="flex items-center gap-2 p-1 bg-surface-container-low rounded-lg">
+<button class="p-2 bg-white shadow-sm rounded-md text-secondary">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-secondary transition-all">
+<span class="material-symbols-outlined">calendar_month</span>
+</button>
+</div>
+</div>
+<!-- Events Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Event Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<img alt="Mixer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="candid shot of a diverse group of young professionals laughing and networking in a modern sunlit cafe space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1wmR1OnyfJUc-9SXTfWRLGMISozBCgs4axibX24DKZiw33lcRFggMPf7jG4uj32mGEFIazVxThMtTdz2abdCOmelHE0OlCOyODbwB8StCe-yvlDzr3UAHTtUEC3JYIDncXFRGpd3nP6dMmFml5SUm35ynbiFzJW1gnu7PNQlETY_moSQyBMs6SIHOFesgQdtehm1cduJifLP37dBUJ06DAUmI5aZzNUP2FvkK_PSbrAhj3ntGi64s0iGXh-JkWaA4ir-VlndnJTr6"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded shadow-sm">
+<span class="text-xs font-bold text-secondary uppercase">Social</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="bg-surface-container-low px-3 py-2 rounded text-center min-w-[50px]">
+<span class="block text-lg font-extrabold text-primary leading-none">12</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">Sept</span>
+</div>
+<div class="text-right">
+<span class="text-xs font-semibold text-on-surface-variant flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 6:30 PM
+                                    </span>
+</div>
+</div>
+<h5 class="text-xl font-manrope font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Digital Nomads Alumni Mixer</h5>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Connect with fellow alumni working remotely. A relaxed evening of networking and shared experiences.</p>
+<div class="mt-auto space-y-3">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded-full overflow-hidden">
+<img alt="Host" class="h-full w-full object-cover" data-alt="professional portrait of a middle-aged male host in a business casual outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHWlE6nwJ-lvo1-kH5dISCozck_PtuvVUJqc26LXRnj_F1jm5sZXAgq5vaDKLtKLRgD9KpsE444bHTXNjmmrokwPORMcMZZHXji49nl86nZDfsP62y5jKXEB_kdnxvCHKgPlkODF6tHtLYziavIjyddXrRiyQS-8KXQEeHhBTJASAKUCMziz0mGpjPEga_ZO-wVErQPUt8SDWp9eTPKvmi-V1syrzXevOVxqBZUKNCrsVMWYNXH_p4Qmr1O3OrlTot3bBSEfcAp4B1"/>
+</div>
+<span class="text-xs font-medium text-on-surface">Hosted by <strong>Jameson Davis</strong></span>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-xs font-bold text-secondary">42 RSVP'd</span>
+<button class="text-sm font-bold flex items-center gap-1 group/btn text-primary">
+                                        Details <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<img alt="Workshop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of hands typing on a laptop with lines of code visible on screen and soft office lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD72aAHOM1njx8ZOn0JAJ0wHmdqPnVgtMjepcBdhqryOjpo8AdnMrBSB6HzSwo3tRkNBfbo4qgiXppyFfriKK1dERaSR2bFODGlplPwbVw9IGukBnj9E2QRuzhZeaKsaQsplOfYpK7RIeN-ONkCZYd6ZNC9SrG2g9WgON1OZvHs5ejD0Osj0dVt59gXFV6kJbELYFMLL1iiOPrQomZUvCRPbA-1q6I-HMqQaRzfVGvsYOT0qGQAui_8cyXD_D67-lgkHDM8M8u3VslP"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded shadow-sm">
+<span class="text-xs font-bold text-secondary uppercase">Workshop</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="bg-surface-container-low px-3 py-2 rounded text-center min-w-[50px]">
+<span class="block text-lg font-extrabold text-primary leading-none">18</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">Sept</span>
+</div>
+<div class="text-right">
+<span class="text-xs font-semibold text-on-surface-variant flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 10:00 AM
+                                    </span>
+</div>
+</div>
+<h5 class="text-xl font-manrope font-bold text-primary mb-2 group-hover:text-secondary transition-colors">AI Ethics &amp; The Future of Work</h5>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">A deep dive into the ethical considerations of artificial intelligence in corporate environments.</p>
+<div class="mt-auto space-y-3">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded-full overflow-hidden">
+<img alt="Host" class="h-full w-full object-cover" data-alt="portrait of a woman with glasses and professional attire, representing an expert in technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZm_4J3gs1DI47Bg1CFW0ZcdN6Qp9Z0WXzPkBeRjKmDjnV5W3RkSf0wmUv9vgOuoIl7ZenOqqB1iIm7DbERdSSpxEDrHXCpb92d3kR2wdN6eqRbKlZ85LYzJ0tZz--KjenoMDb670YYwnBerHqDbF1JdK9ZTqW1Jv5ae8ql_kPoX7DAsZ9-0XcYTlFMRhxEOR4Vf-q15iHpcaXJ0rWkxILadXNi0C4mYcGqH1SJ6daEl4M2U-SHZXRa0Nmp6MdqAV4tydPLqExvvOw"/>
+</div>
+<span class="text-xs font-medium text-on-surface">Hosted by <strong>Dr. Sarah Miller</strong></span>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between">
+<span class="text-xs font-bold text-secondary">156 Registered</span>
+<button class="text-sm font-bold flex items-center gap-1 group/btn text-primary">
+                                        Join Waitlist <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col border-2 border-dashed border-outline-variant items-center justify-center p-8 text-center bg-transparent shadow-none">
+<div class="bg-surface-container-low p-6 rounded-full mb-4">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">add_circle</span>
+</div>
+<h5 class="text-xl font-manrope font-bold text-primary mb-2">Host an Event</h5>
+<p class="text-sm text-on-surface-variant mb-6">Have an idea for a meetup or workshop? Organize it through our platform.</p>
+<button class="px-6 py-2 border border-primary text-primary rounded font-bold hover:bg-primary hover:text-white transition-all">Submit Proposal</button>
+</div>
+</div>
+<!-- Past Events Ticker -->
+<section class="mt-20">
+<div class="flex items-center justify-between mb-8">
+<h4 class="text-2xl font-manrope font-bold text-on-surface">Event Memories</h4>
+<a class="text-sm font-bold text-secondary hover:underline underline-offset-4" href="#">Browse Gallery</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Past 1" class="w-full h-full object-cover" data-alt="black and white photo of graduates tossing their caps in the air in front of a majestic university building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBZyKT3g8Q2yA49mlvtg_5xiHRb7-W13rvK78eR5NiNIqGqzgD1_OVzu2rQLJaHKBCBFjFcZX1pIXBMBWgcVxAi3RgDuTEjegB6ExffRJLTzMyGSSNNMRWIFvPPU7CtStBNSjGGMlDs1m_i1B4CsD40rHDVCqgxJhFDSUtB0049Ihs4QjpY0vYr4t19wZYEDPc7VJ1ZEf23HUp3Xq32l_cNNosdVXSofUjuKLSy_H8U72k9uVs0GhXCfERZmsGxo4Ozv-ps-s_mRvR"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Past 2" class="w-full h-full object-cover" data-alt="close-up of two people shaking hands at a career fair with blurred booths in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdTr5_VPI5CNOasdpJUwbdJH7IxFNGVf6UajMRptz72DpXdcgAKdqlOTaxUDmwHy10i5tdlpIBK_epSlhBAhvd7elL24VLhFubz-g4ktJohRkf7-F9juM8spZf-tsJ4GNuhitfZ4m1W6pTtKXa2cn87AAWjzdLzQn5Zuv0iNUevuMF8IdeMAvpf6rM9ot8J0IKUyUQW2XGw8o8LJqhA6gMMF5dvNlivl2cxHg0peFwQLhLpvp52KOip_PTMqIH5Qme72EwYrY4PXNq"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Past 3" class="w-full h-full object-cover" data-alt="group photo of alumni sitting around a large conference table during a seminar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLqdBV0tXDk8DpxNutHiFDT6LrlvVH-5KPdC-PSE1WweRTFMWihL1ABuP9pmijcaRE5_t30Namn9M_wFftTSkWgBINJQrQbhF13BnycZeXxLImKCiGR3Q7I20sHe7ZT6Aqh98ZpSXZxhqQF5E9t8KKypKDJHIWiDXjnRNFNmWdAlzOYEfQfWiw5h14fUMPY36I2IWwWz48NigTPEZR-qxF9Q28U_rwjqCsm0fJE_0fulEMYh0Tb8coxp27_tDISnvvvFS1DKiyBZK5"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Past 4" class="w-full h-full object-cover" data-alt="outdoor summer garden party with string lights and people chatting over cocktails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADC_hrvQEjScvJcr59CvOMdGKYhUlBn3asnKmc-sErrnMtCI2Lgd_NeX1kjvTFlS7DwknegwDeKidRlfhs-MYF_xZYKfBAdYbvYhgFd0qwRsOgZ3GJ8gSYLeNvk7nJFL5w47tBe5JzPUbkAVsOX8SDgTXXYFSWEcrp6sHP8HdP6TADWMEsaX1sSYyeeEadICiem-bbVT3GRB_kKvTVpk9Luzw86NbV4oweo37W7EcRbmU2plIPIHE5zFTVI3_PXw7cTXjvsRtTeMTZ"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 hidden lg:block">
+<img alt="Past 5" class="w-full h-full object-cover" data-alt="wide shot of a theater audience listening to a keynote speaker on stage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmccZgd8t0TTwR6Ko54S_js44UPYnUO2-5GkA2WBmNvca2OBdvcindT-MMyn2rgGlrjLenV6ng--hTJWk7yojCeuQqL0XG0xnLleIjH3PQeqXhnskZw5zoRu0sshd7lCBTv5ONnKm5UZDzaD_TRUwd_AeSuh5FKJR7bYtLrKW6ssJ6i-ePnu0TfA_RBvyqzU86or63woKhGhiXIzYVZJN_BR-DOjXA49dfdGyPBijfieuuJNsCGQwpECtXqv27ZK8siv1hAz8f7psJ"/>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer Component -->
+<footer class="bg-slate-900 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center border-t border-slate-800">
+<div class="mb-6 md:mb-0">
+<span class="font-manrope text-white font-bold text-xl">The Academic Lens</span>
+<p class="font-inter text-xs text-slate-400 mt-2">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs text-slate-400 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">About</a>
+<a class="font-inter text-xs text-slate-400 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-400 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-400 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Alumni Giving</a>
+</div>
+</footer>
+</main>
+</div>
+</body></html>

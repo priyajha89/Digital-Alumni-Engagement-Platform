@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mentorship Hub | The Academic Lens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-container": "#3c2700",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#ad8d5b",
+                        "tertiary-fixed": "#ffdead",
+                        "on-tertiary-fixed": "#281900",
+                        "background": "#f8f9ff",
+                        "tertiary": "#211400",
+                        "surface-container-low": "#eff4ff",
+                        "surface": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-fixed": "#081b38",
+                        "primary-container": "#1a2b48",
+                        "inverse-primary": "#b6c7eb",
+                        "on-surface-variant": "#44474d",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "outline": "#75777e",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#fefcff",
+                        "on-background": "#0b1c30",
+                        "secondary-container": "#2170e4",
+                        "tertiary-fixed-dim": "#e5c18a",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#d3e4fe",
+                        "on-primary-fixed-variant": "#374765",
+                        "outline-variant": "#c5c6ce",
+                        "on-surface": "#0b1c30",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "primary": "#031632",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#001a42",
+                        "on-secondary-fixed-variant": "#004395",
+                        "secondary": "#0058be",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5b4217",
+                        "surface-container": "#e5eeff",
+                        "surface-tint": "#4e5f7e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-container": "#8293b5",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-line { border: none !important; }
+        .tonal-transition { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface flex min-h-screen">
+<!-- SideNavBar Component -->
+<aside class="h-screen w-64 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 space-y-2 sticky top-0 shrink-0">
+<div class="mb-8">
+<h1 class="text-lg font-bold text-slate-900 dark:text-white font-headline">Alumni Portal</h1>
+<p class="text-xs text-on-surface-variant font-medium">Distinguished Network</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span>Directory</span>
+</a>
+<!-- Active State: Mentorship -->
+<a class="flex items-center space-x-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 rounded-lg shadow-sm shadow-blue-900/5 px-4 py-3 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined" data-icon="psychology" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span>Mentorship</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span>Events</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span>Jobs</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-3 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>Analytics</span>
+</a>
+</nav>
+<div class="pt-6 border-t border-outline-variant/10 space-y-1">
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-headline font-bold text-sm mb-4 active:scale-98 transition-all">Post a Job</button>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-2 text-xs font-semibold" href="#">
+<span class="material-symbols-outlined scale-75" data-icon="help">help</span>
+<span>Support</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 px-4 py-2 text-xs font-semibold" href="#">
+<span class="material-symbols-outlined scale-75" data-icon="shield">shield</span>
+<span>Privacy</span>
+</a>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 min-w-0 overflow-y-auto bg-surface">
+<!-- Header Section -->
+<header class="p-10 pb-0">
+<h1 class="text-5xl font-headline font-extrabold text-primary tracking-tight mb-2">Mentorship Hub</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg">Cultivating the next generation of leaders through direct alumni expertise and strategic career guidance.</p>
+</header>
+<!-- Bento Grid Layout for Sections -->
+<div class="p-10 grid grid-cols-12 gap-8">
+<!-- Section: Request a Mentor (Main Feature) -->
+<section class="col-span-12 lg:col-span-8 space-y-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-headline font-bold text-primary">Request a Mentor</h2>
+<button class="text-secondary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        View Directory <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Mentor Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm shadow-primary/5 group hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4 mb-4">
+<img class="w-16 h-16 rounded-full object-cover" data-alt="professional portrait of a middle-aged man with short hair in a dark suit, confident smiling expression, corporate office backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB56L0sX_TS2HMedpHrisft-sJMcwUxjOpPFJ32kahVWSgtEaKivn2vyIRjfULC29mRnkhHhJPfMo9ocDcvpTnz79MuuoFBp023QvfvN72wddzrQB1cju1GZGB3l6gTE8RDgUyqSjz8eKYcfAcHubcTy6E3IQI4GACKNl7UQXGLKRwbsOzg1Z69DZrNZzbjH04OdSeJho0hUKtI7vfQFTg-tTgj8A0AhreIcCwmgF6ovOBGCa-E2jSrR7z2ywglSrabGFHEK8nfKEx6"/>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary">Dr. Marcus Chen</h3>
+<p class="text-sm text-secondary font-semibold">Principal Architect, Global Design Inc.</p>
+<div class="flex items-center gap-1 mt-1 text-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-bold uppercase tracking-wider">Heritage Alum</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Specializing in sustainable urban planning and large-scale infrastructure projects. Over 15 years of leadership experience.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Architecture</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Leadership</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Sustainability</span>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-bold text-sm hover:bg-primary-container transition-colors">Request Mentorship</button>
+</div>
+<!-- Mentor Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm shadow-primary/5 group hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4 mb-4">
+<img class="w-16 h-16 rounded-full object-cover" data-alt="portrait of a young professional woman with long dark hair, wearing a neutral blazer, soft natural lighting, creative studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq9Mnmu0G6scWhe_fzHTfJpZ0gSdtgzY_igUfLUGtCAU8HvpB5BXu-qRKElHUfvG0u4DgWS91FSW_7wiSZ7kpwQbvZ-ouzECNnX5oe81YpRziWMB7a49cacOMmfZeWFoCb-fpHRQuVOtQQCm1X6ikr9cJT-BoGiL06JxhkxnBCz0NeIp1otO1R7Cwz4jQgT7SecE6DPaUycMKZEGxIJEoaCIWlAxqQuq0b52cGzdZ5gTR-M_YNTYey4vKy3YDmwXUC-TrUUoh57lE-"/>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary">Sarah J. Williams</h3>
+<p class="text-sm text-secondary font-semibold">Senior Product Lead, TechFlow</p>
+<div class="flex items-center gap-1 mt-1 text-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-sm" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-xs font-bold uppercase tracking-wider">Top Mentor</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Focused on helping early-career graduates navigate the fintech space and mastering the product lifecycle management.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Product</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Fintech</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant text-xs font-semibold rounded-full">Strategy</span>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-bold text-sm hover:bg-primary-container transition-colors">Request Mentorship</button>
+</div>
+</div>
+</section>
+<!-- Section: Request Status (Side Board) -->
+<section class="col-span-12 lg:col-span-4 space-y-6">
+<h2 class="text-2xl font-headline font-bold text-primary">Request Status</h2>
+<div class="bg-surface-container-low rounded-2xl p-6 h-fit">
+<div class="space-y-4">
+<!-- Status Item 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary">Ellen Degeneres</h4>
+<p class="text-xs text-on-surface-variant">Applied 2 days ago</p>
+</div>
+</div>
+<span class="px-2 py-1 bg-amber-100 text-amber-700 text-[10px] font-extrabold uppercase rounded">Pending</span>
+</div>
+<!-- Status Item 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center text-green-600">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary">Julian Casablancas</h4>
+<p class="text-xs text-on-surface-variant">Approved Oct 12</p>
+</div>
+</div>
+<span class="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-extrabold uppercase rounded">Active</span>
+</div>
+<!-- Status Item 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between opacity-60">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">cancel</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary">Alex Turner</h4>
+<p class="text-xs text-on-surface-variant">Declined Oct 01</p>
+</div>
+</div>
+<span class="px-2 py-1 bg-red-100 text-red-700 text-[10px] font-extrabold uppercase rounded">Closed</span>
+</div>
+</div>
+<button class="w-full mt-6 py-2 text-on-surface-variant hover:text-primary font-bold text-xs transition-colors flex items-center justify-center gap-2">
+                        View History <span class="material-symbols-outlined text-sm">history</span>
+</button>
+</div>
+</section>
+<!-- Section: My Mentees & Active Partnerships (Full Width Asymmetric) -->
+<section class="col-span-12 mt-4">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="text-3xl font-headline font-extrabold text-primary">Active Partnerships</h2>
+<p class="text-on-surface-variant">Current collaborations and mentorship cycles in progress.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Partnership 1 (Broad Card) -->
+<div class="md:col-span-2 bg-primary-container p-8 rounded-2xl text-white relative overflow-hidden shadow-xl shadow-primary/20">
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex justify-between items-start mb-10">
+<div class="flex -space-x-4">
+<img class="w-14 h-14 rounded-full border-4 border-primary-container object-cover" data-alt="portrait of a professional woman with blonde hair, smiling softly, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRiEbvJ3M1rW-YVwkBXJXmdOmW1zwwEauoZh1fB0Beet-611wVQNbsEL5fH_zOsBX9PUCk8xijbjNJhYwHaS2Ii4QiOFOaY1kVymjmO7XvRddXBv6Y2NtTB4qBjllunrANmdoI3Tef_juzBUKyDniJ9178pADtnMEnxnoqOPXjJlEu3xYZF5WegU2EeI7qO81mze9q7ktiXQ_FhmJJHZjsXRroSOadTE2iCtJm0TurzWQWCcPV5lrwwZ9cnEaZyZfAM-ku-AHApq4o"/>
+<img class="w-14 h-14 rounded-full border-4 border-primary-container object-cover" data-alt="portrait of a young man with curly hair, casual professional style, smiling at the camera, blurred outdoor background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEiAIO2GI0MTGeVcti7KVxucgcit_8GmIKmiayrL5KoHmr3VCBxi9PHce_z8PI8c6-NTuaK-Ds3QdhTeb0lxpbnCMujnr-41V3VA7Euz0QFowMx0icZOTkjRrJnk4XgaqL5sLfvWh0RdbTBdXGrONZDkRbMujeYXlJyLj8y_TIWqAsVDvMUqokOGk1SZFu2gduYLeW5AodBjLQ08ooApGND4YbEk18hAHs0m65QCReSjtCTLN3kW3iO451n1Aas06jruh5D7yKTcQf"/>
+</div>
+<span class="px-4 py-1.5 bg-secondary rounded-full text-xs font-bold tracking-widest uppercase">Executive Cycle</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2">Strategy &amp; Market Growth</h3>
+<p class="text-on-primary-container mb-8 max-w-md">Mentoring James Wilson through the Seed Round funding process. Meeting scheduled for next Tuesday.</p>
+<div class="mt-auto flex items-center justify-between pt-6 border-t border-white/10">
+<div class="flex items-center gap-6">
+<div>
+<p class="text-[10px] uppercase font-bold text-on-primary-container tracking-wider">Progress</p>
+<p class="font-bold">65% Complete</p>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold text-on-primary-container tracking-wider">Next Sync</p>
+<p class="font-bold">Oct 24, 10:00 AM</p>
+</div>
+</div>
+<button class="p-3 bg-white text-primary rounded-xl hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined">video_call</span>
+</button>
+</div>
+</div>
+<!-- Background Accent -->
+<div class="absolute bottom-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">handshake</span>
+</div>
+</div>
+<!-- Partnership 2 (Stats/Status Card) -->
+<div class="bg-surface-container-high p-8 rounded-2xl flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-secondary mb-6 shadow-sm">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">My Mentees</h3>
+<p class="text-sm text-on-surface-variant mb-6">You are currently guiding 4 active mentees this semester.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="text-sm font-semibold">James Wilson (Growth)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="text-sm font-semibold">Anna Maria (UX Design)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="text-sm font-semibold">Liam O'Brien (Policy)</span>
+</div>
+</div>
+</div>
+<button class="mt-8 text-secondary font-bold text-sm flex items-center gap-2">
+                            Manage All Mentees <span class="material-symbols-outlined text-sm">settings</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="bg-slate-900 w-full py-12 px-8 mt-12 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-6 md:space-y-0">
+<div class="flex items-center gap-8">
+<span class="font-manrope text-white font-bold">The Academic Lens</span>
+<p class="font-inter text-xs text-slate-400">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline-offset-4 hover:underline decoration-blue-500" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline-offset-4 hover:underline decoration-blue-500" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline-offset-4 hover:underline decoration-blue-500" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline-offset-4 hover:underline decoration-blue-500" href="#">Alumni Giving</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

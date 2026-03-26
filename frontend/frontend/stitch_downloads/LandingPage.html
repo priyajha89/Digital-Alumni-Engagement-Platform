@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Academic Lens | Distinguished Alumni Network</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8f9ff",
+              "tertiary-container": "#3c2700",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ad8d5b",
+              "tertiary-fixed": "#ffdead",
+              "on-tertiary-fixed": "#281900",
+              "background": "#f8f9ff",
+              "tertiary": "#211400",
+              "surface-container-low": "#eff4ff",
+              "surface": "#f8f9ff",
+              "surface-dim": "#cbdbf5",
+              "primary-fixed": "#d7e2ff",
+              "on-primary-fixed": "#081b38",
+              "primary-container": "#1a2b48",
+              "inverse-primary": "#b6c7eb",
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#eaf1ff",
+              "surface-container-highest": "#d3e4fe",
+              "outline": "#75777e",
+              "secondary-fixed": "#d8e2ff",
+              "on-secondary-container": "#fefcff",
+              "on-background": "#0b1c30",
+              "secondary-container": "#2170e4",
+              "tertiary-fixed-dim": "#e5c18a",
+              "primary-fixed-dim": "#b6c7eb",
+              "on-error-container": "#93000a",
+              "surface-variant": "#d3e4fe",
+              "on-primary-fixed-variant": "#374765",
+              "outline-variant": "#c5c6ce",
+              "on-surface": "#0b1c30",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary": "#031632",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#213145",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#001a42",
+              "on-secondary-fixed-variant": "#004395",
+              "secondary": "#0058be",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "surface-container": "#e5eeff",
+              "surface-tint": "#4e5f7e",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#dce9ff",
+              "on-primary-container": "#8293b5",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #031632 0%, #1a2b48 100%);
+        }
+        .asymmetric-shape {
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-slate-900/5">
+<div class="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-manrope font-extrabold text-slate-900 dark:text-slate-50">
+                The Academic Lens
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Directory</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Mentorship</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Events</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300" href="#">Jobs</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex items-center space-x-4 text-on-surface-variant">
+<span class="material-symbols-outlined hover:bg-slate-100/50 p-2 rounded-full cursor-pointer transition-all">notifications</span>
+<span class="material-symbols-outlined hover:bg-slate-100/50 p-2 rounded-full cursor-pointer transition-all">settings</span>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-container transition-all active:scale-95 duration-200">
+                    Dashboard
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-primary text-on-primary">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="Stately ivy-covered university library building with large arched windows and stone architecture at sunset with soft golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArZUoNbKZitkeFOwHCApJY2v2BG7UEZKeCFRmNyeQMbJY4zyLq9ovgQhKBCLpyfgTY8EruVRCKhDH1sglRsGwL2rnnJzdSy1XTnHS6i5MgclmG_tz6L_HBZVXNNwsnzKBCrky1YFRu2ddBw77dfK5C5JbojxOpjl30mrGU8RftelhH2d1CKR-Nc7YnmTQoHuokQSfy9vDggIpH1JSTlmUv-G1gAV4rypx0W7nyi2UsTU_59DpFUfwng5UdmAlBSVLJbkAeh1PhUNum"/>
+<div class="absolute inset-0 hero-gradient opacity-80"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+                        The Legacy <br/><span class="text-secondary-fixed-dim">Continues Here.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-primary-container font-body max-w-2xl mb-10 leading-relaxed">
+                        Connect with a global network of innovators, leaders, and thinkers. Your professional journey didn't end at graduation—it evolved.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary-container transition-all">
+                            Join Alumni Network
+                        </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all flex items-center gap-2">
+                            Explore Directory <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="hidden lg:block lg:col-span-5 relative">
+<div class="asymmetric-shape bg-surface-container-lowest/10 backdrop-blur-2xl p-8 rounded-xl border border-white/10">
+<div class="space-y-6">
+<div class="flex items-center gap-4 bg-white/5 p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl">groups</span>
+<div>
+<div class="text-2xl font-bold">45,000+</div>
+<div class="text-sm opacity-70">Active Alumni</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white/5 p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl">work</span>
+<div>
+<div class="text-2xl font-bold">12,400</div>
+<div class="text-sm opacity-70">Career Placements</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white/5 p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl">school</span>
+<div>
+<div class="text-2xl font-bold">280</div>
+<div class="text-sm opacity-70">Mentorship Programs</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Statement -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="max-w-4xl mx-auto text-center">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm block mb-4">Our Purpose</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8 leading-tight">
+                        Cultivating intellectual excellence through lifelong peer-to-peer engagement.
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 text-left">
+<div class="space-y-4">
+<h3 class="font-headline text-xl font-bold text-primary">Global Reach</h3>
+<p class="text-on-surface-variant leading-relaxed">Spanning 84 countries, our network provides a sophisticated ecosystem for international collaboration and insight.</p>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline text-xl font-bold text-primary">Strategic Mentorship</h3>
+<p class="text-on-surface-variant leading-relaxed">Bridging the gap between established industry veterans and emerging pioneers through curated matching.</p>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline text-xl font-bold text-primary">Academic Rigor</h3>
+<p class="text-on-surface-variant leading-relaxed">Access exclusive journals, lectures, and research archives that keep you at the forefront of your field.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Success Stories -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<span class="text-secondary font-bold tracking-widest uppercase text-sm block mb-4">Success Stories</span>
+<h2 class="font-headline text-4xl font-bold text-primary">Distinguished Journeys</h2>
+</div>
+<button class="text-secondary font-bold flex items-center gap-2 hover:underline underline-offset-4 mt-6 md:mt-0">
+                        View All Alumni Highlights <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 relative overflow-hidden rounded-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional woman in a high-end corporate office setting with glass walls and cityscape background, looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRUAbTV_484SSdn81_BL7IUphv56zfZ0Jhhc5qrWPDJrBeATU6uekZ2i1oUC1s-V-I4TWJeczCsMyfr9v79Uj7pEsPfpw6UgumqdWBxg25skIEvRbqkgCjk-UUHhg2zUtjM5N3cXnSbFJDCgxf7KK8pWo8F9xIUpasgzlfHQDJ2I_jP2qCIfCIi5DlzeaWRmIZn3CAEOfWNhPBr0tNWrB5IWMYZl_isLHgLWYZwN5FFVJrDDBIsQAlQjwwFPZGWatgeDaGzWvW5YoP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="bg-secondary px-3 py-1 rounded text-xs font-bold mb-4 inline-block uppercase">Technology Leader</span>
+<h3 class="text-3xl font-headline font-bold mb-4">Sarah Jenkins: From Lab to Lead Architect</h3>
+<p class="text-on-primary-container max-w-lg mb-6">"The Academic Lens provided the mentorship connection that allowed me to pivot into sustainable tech leadership within six months."</p>
+<a class="inline-flex items-center gap-2 font-bold hover:gap-4 transition-all" href="#">Read her story <span class="material-symbols-outlined">east</span></a>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="bg-primary-container rounded-xl p-8 flex flex-col justify-between text-white">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">format_quote</span>
+<p class="text-xl font-body italic mb-8">"The networking depth here is unmatched. It's not just a database; it's a living, breathing community of experts."</p>
+</div>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover grayscale" data-alt="Portrait of a male professional in a sharp navy blazer, smiling warmly in a bright modern studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-U8RktZeucOz8seDRd8j7o9ZhlV3yPuhjhaXZdQvRaI6QUlyqJIKdk06ixTTQ6U5YvdU9wUmx68ZBISSMYhkW0p_KvbgZQgKUDAutOQ6db9om1trKKwpAsIX2k9TFiFREP38Ll-dLZ4kmRUQmud6qUw5CJto24AqHjLUqh8nzaZD9NBlTZo7WYTf-y4x8miM9GvyaV9s74Q_dZVaGEZqwYZTLv8Ydbeq7cc8yrvfoQuRTpy4_iwOtqZH44siJkYlHaOTJK3_3Sjqc"/>
+<div>
+<div class="font-bold">David Chen</div>
+<div class="text-xs opacity-60">Venture Partner, Class of '08</div>
+</div>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-high rounded-xl overflow-hidden group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Group of diverse alumni professionals collaborating around a conference table in a sun-drenched architectural space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVG6fyvUx0anIh5uveRR79HNA8JLhcREY7FuWCGdxg-YKS-YsKTtl3y-0-KFbMkv3fwKXhoXAkF62cm3cByxjbe1QmeXNwna7lFZsXXeUx_oKXqCzC-cbdUZV62DodDnZMEPlpbmOIwr2qc0Q0ZxKRTSCc2RCiieyXxF6rlbCZOfDaV2TsJynwF-r713exjFuI6pEnciYc2E6pNh9AmM47B7157fMy6cqBf4LajrBwM8ZOTvN9VzeuLHegQlO_f1GAI5G_er7DK9I0"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline font-bold text-primary mb-2">Global Meetup: Zurich</h4>
+<p class="text-sm text-on-surface-variant mb-4">Next week, join 40+ alumni for an evening of strategic foresight in financial tech.</p>
+<button class="text-secondary font-bold text-sm hover:underline">Register Now</button>
+</div>
+</div>
+<!-- Small Card 3 -->
+<div class="bg-secondary rounded-xl p-8 text-white relative flex flex-col justify-center overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]">psychology</span>
+</div>
+<h3 class="text-4xl font-headline font-extrabold mb-4 italic leading-tight">92%</h3>
+<p class="text-lg font-medium opacity-90">Of our alumni report higher career satisfaction after joining the Mentorship Program.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-8">
+<div class="bg-primary-container rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full hidden lg:block">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container to-transparent z-10"></div>
+<img class="w-full h-full object-cover opacity-30" data-alt="Close up of a professional in a tailored suit checking a high-end watch, representing time and career progression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqVxHwRVXg4ra08QN_2o5m_HQHB9KtN843_Pihf1Dh1jXi0Jr7oQm-jM6TN9kUxOaZQCHUt01r8nE4gtAlp3UHJuoS4uQQV3XHkyyWNtMaIrxUaEJ37Xn554QHOXo78j0Jv83UBbxsWSEyNYdhK8ADoQZzhMhF9tCsLSZAUUwomrHnkUXJIcZWgnK8lZgMcOuPfE06GFgqVZ2WKbGQuEY87iCW0nqx6_o6iCJr2SbZBdbX9FnQY1TWBYmqSCxiU_PtELrRPLsYufc3"/>
+</div>
+<div class="relative z-20 max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                            Your Seat at the Table <br/>is Waiting.
+                        </h2>
+<p class="text-on-primary-container text-lg mb-10">
+                            Don't miss out on exclusive board opportunities, legacy events, and the combined wisdom of a century of graduates.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-bold hover:bg-secondary-container transition-all">
+                                Join Now
+                            </button>
+<button class="text-white border-b-2 border-white/30 hover:border-white py-4 font-bold transition-all">
+                                View Membership Benefits
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full py-12 px-8 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-8 md:space-y-0">
+<div class="flex flex-col items-center md:items-start space-y-4">
+<div class="font-manrope text-white font-bold text-xl">The Academic Lens</div>
+<div class="font-inter text-xs text-slate-400">© 2024 The Academic Lens. All Rights Reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white transition-opacity underline decoration-blue-500 underline-offset-4" href="#">Alumni Giving</a>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Directory | The Academic Lens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8f9ff",
+              "tertiary-container": "#3c2700",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ad8d5b",
+              "tertiary-fixed": "#ffdead",
+              "on-tertiary-fixed": "#281900",
+              "background": "#f8f9ff",
+              "tertiary": "#211400",
+              "surface-container-low": "#eff4ff",
+              "surface": "#f8f9ff",
+              "surface-dim": "#cbdbf5",
+              "primary-fixed": "#d7e2ff",
+              "on-primary-fixed": "#081b38",
+              "primary-container": "#1a2b48",
+              "inverse-primary": "#b6c7eb",
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#eaf1ff",
+              "surface-container-highest": "#d3e4fe",
+              "outline": "#75777e",
+              "secondary-fixed": "#d8e2ff",
+              "on-secondary-container": "#fefcff",
+              "on-background": "#0b1c30",
+              "secondary-container": "#2170e4",
+              "tertiary-fixed-dim": "#e5c18a",
+              "primary-fixed-dim": "#b6c7eb",
+              "on-error-container": "#93000a",
+              "surface-variant": "#d3e4fe",
+              "on-primary-fixed-variant": "#374765",
+              "outline-variant": "#c5c6ce",
+              "on-surface": "#0b1c30",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary": "#031632",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#213145",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#001a42",
+              "on-secondary-fixed-variant": "#004395",
+              "secondary": "#0058be",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "surface-container": "#e5eeff",
+              "surface-tint": "#4e5f7e",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#dce9ff",
+              "on-primary-container": "#8293b5",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-transition { transition: background-color 0.3s ease; }
+        .glass-effect { backdrop-filter: blur(24px); }
+        .ghost-border { border: 1px solid rgba(197, 198, 206, 0.15); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col p-6 space-y-2 h-screen w-64 bg-slate-50 dark:bg-slate-950 fixed left-0 top-0 tonal-layering">
+<div class="mb-8">
+<div class="text-lg font-headline font-bold text-slate-900 dark:text-white">Alumni Portal</div>
+<div class="text-xs font-label text-slate-500">Distinguished Network</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    Overview
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 rounded-lg shadow-sm shadow-blue-900/5 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">group</span>
+                    Directory
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">psychology</span>
+                    Mentorship
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">event</span>
+                    Events
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">work</span>
+                    Jobs
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 font-manrope text-sm font-semibold hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">analytics</span>
+                    Analytics
+                </a>
+</nav>
+<div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-1">
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-manrope font-bold text-sm mb-4 active:scale-95 transition-all">Post a Job</button>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">help</span>
+                    Support
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-manrope text-sm font-semibold" href="#">
+<span class="material-symbols-outlined">shield</span>
+                    Privacy
+                </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 bg-surface-bright min-h-screen">
+<!-- Top Bar -->
+<header class="h-20 flex justify-between items-center px-8 sticky top-0 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl z-40">
+<h1 class="font-headline text-2xl font-extrabold text-slate-900 tracking-tight">Directory</h1>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low ghost-border rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 outline-none w-64 transition-all" placeholder="Search members..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="close-up portrait of a professional man in a tailored grey suit with a confident expression and soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR4xtJG88VLhTSPZJXkm1wsOFBNZwcYYtcjiLzvrbCdPyJWbkdu3EtzdtxfpsSjUNJCCxaSk8SoDStJ01kpqLuAOLIzELWzBY6rJOiN-EgMl8pNgGep3v6tbieMhRePawrXOFs1WeC1Ct9RE7omZ3iTohyw_xE4a0PUXrYYj6eH30PEiQNwbjG_y91w4nthQ2PWX1ROepnXQ4_GjUeEFW13sGdi6om39kBiSIt_NY1I_6G0sz0Fsux57CFzTpIBL6rBH7-JzpKOaRG"/>
+</div>
+</div>
+</header>
+<div class="p-8 max-w-7xl mx-auto">
+<!-- Hero & Filter Header -->
+<section class="mb-12">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div>
+<span class="text-secondary font-headline font-bold text-sm tracking-widest uppercase mb-2 block">Our Alumni</span>
+<h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-primary leading-tight max-w-2xl">Connect with leaders across the global network.</h2>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-lowest ghost-border rounded-lg font-label font-semibold text-sm text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-lg">filter_list</span>
+                                Advanced Filters
+                            </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary text-on-primary rounded-lg font-label font-semibold text-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-lg">person_add</span>
+                                Invite Alumni
+                            </button>
+</div>
+</div>
+<!-- Rapid Filter Bar -->
+<div class="mt-8 flex flex-wrap gap-4">
+<div class="flex-1 min-w-[200px]">
+<label class="block text-xs font-bold text-outline-variant uppercase tracking-wider mb-2 px-1">Industry</label>
+<select class="w-full bg-surface-container-lowest ghost-border rounded-lg px-4 py-2.5 text-sm font-body focus:ring-secondary focus:border-secondary">
+<option>All Industries</option>
+<option>Technology</option>
+<option>Finance</option>
+<option>Healthcare</option>
+<option>Design</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block text-xs font-bold text-outline-variant uppercase tracking-wider mb-2 px-1">Location</label>
+<select class="w-full bg-surface-container-lowest ghost-border rounded-lg px-4 py-2.5 text-sm font-body focus:ring-secondary focus:border-secondary">
+<option>Global</option>
+<option>New York</option>
+<option>London</option>
+<option>Singapore</option>
+<option>San Francisco</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block text-xs font-bold text-outline-variant uppercase tracking-wider mb-2 px-1">Batch Year</label>
+<select class="w-full bg-surface-container-lowest ghost-border rounded-lg px-4 py-2.5 text-sm font-body focus:ring-secondary focus:border-secondary">
+<option>All Years</option>
+<option>2023</option>
+<option>2020</option>
+<option>2015</option>
+<option>2010</option>
+</select>
+</div>
+<div class="flex items-end">
+<button class="bg-secondary/10 text-secondary p-2.5 rounded-lg hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined">sync</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Alumni Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Alumni Card 1 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2018</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional portrait of a young woman with a warm smile, wearing a navy blazer in a bright, modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBivXYVhejwW3AnQa1kYOwoGcYMcKl19loouArglErQN1YvKICsSrpOdJr2L8-ie3Pz0erMjl6m52VZJyXXK_QkBB9-dYxRhJ7n_Ze-h66dTg1iPiC8GKzt-m9PujKfeCyAwg_1SF4AGWc-d4W4l46zYDD6xD71qDJQxYWHWcgVA_KK3yTJ1NORLWEZP_Gf04DzP1-7rKbg1aFE_ZcbIPtAk3q5cLCU77sACTo98k2XaaUaD3NOMRX8wrf-ooOWb2heIL_6Y_3lI9bH"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-4 border-white rounded-full"></div>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">Sarah Jenkins</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">Senior Product Designer</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    Meta Platforms Inc.
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                Menlo Park, CA
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                M.S. Human-Computer Interaction
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+<!-- Alumni Card 2 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2012</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="headshot of a mature professional male executive in a black turtleneck against a minimalist grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVW16wDENf12fzQXuJ_652l6p03ZGK5N_W4F-xRQb5YMGiqcC7VnTXdVxL_632MFZLOeWM1MxWr6RljJrvuuh6E0mWBOiN8Ih29bFDd_zzbDbY5bi7Dk-L9APICvVkFFwG6hFEbppfsUfDp5jAgPCU_VrNXz_NRZSs5Agsl6pIfh4_kkE7HLAND4_TrjsoWx5EfX26CnX0EHIUMRC9ZwWJPdQWWDv013oPZeqTM_b_6Q8Y5NILmz9RM7TZQCSQc_zwh8vTc9QWPQyI"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">David Chen</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">VP of Engineering</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    Stripe
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                Dublin, Ireland
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                B.S. Computer Science
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+<!-- Alumni Card 3 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2020</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional portrait of a confident woman of color with curly hair, wearing a white blouse in a bright library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBncwWJL-0kr00j-YbD8eAK3FyuVW96KZ7nC-01A0zBYlp46bHzFsSVOj36zo-moxO91_-ZVbE7JgMyb4LZ1bDW_41JgWGZ97FsvWXdCJGQFj3E83mlhDf2IwgOd7vkachvfae9a6gkwBHC-MrvzKy4abn-7HTNoWQp-TZlUa0BXAaRJxAomLb0oSAGfHf5FJDKBp9juf5QiGDOFPqRjYYT1_nRc6dPo1796CjBcm3rZx93aAqRCnRbrwk0yyRVG4-4ZShAKeJZNBcU"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-4 border-white rounded-full"></div>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">Aisha Khan</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">Investment Analyst</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    Goldman Sachs
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                London, UK
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                B.A. Economics &amp; Finance
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+<!-- Alumni Card 4 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2015</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional man in business attire standing in front of high-rise windows with urban city view, soft natural daylighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpUre2GW59n1CTVgL7uTsoa9aN51CAUe6FvJyAUI5D9yH7RVgilgRpXLfTdOzBC6eVmbmH47HapW94CiBnJ5FusnoOmvdK76sC1B7VdI0XR47UBriqXEThBu15WEsvil9AArhrNPqDPOn5o7spjUWMJyvewUT8ojS483mJA6oI1v_SMaxET_Oix_eFDpLo5IUpdWQ8cNrrzF-sgqodADInFMNef53DiYQLoW6IjHhBihNneTKSQwQFLLx_iK4OoNfXqs2o81UuAd-O"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">Robert Wilson</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">Lead Researcher</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    DeepMind
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                London, UK
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                PhD Artificial Intelligence
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+<!-- Alumni Card 5 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2019</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="portrait of a creative professional woman with glasses, looking thoughtfully at the camera in a designer studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQLNBer6j-2_IuVk59MXkZyaRLCREtqgL2_N2oig7VIgVB39oFDJ6r5PyFL_OL_gDNf014bJFGplCgAd4EFcJo1T17V4MgXaKY5bJ7dzEDNHLhl0cDkFqD_Aj-Tc6hkPCaNJaDsaGtqE7LDrJGagz_sp5ICFxWSZ9bmFDXjZEKsllGdePhkQ8iKlo1oOPJjKTkFbJOMm5rpf98Ltvb_aWpSaKgzB8ypxb4KxDOAyuRySUvNcLoAchTxwxb8zfehIKgBSBNVJ_SWRD2"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-4 border-white rounded-full"></div>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">Elena Rodriguez</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">Senior Marketing Manager</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    Airbnb
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                Barcelona, Spain
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                MBA Global Business
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+<!-- Alumni Card 6 -->
+<div class="bg-surface-container-lowest group rounded-xl p-6 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(3,22,50,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="text-[10px] font-bold tracking-tighter text-on-surface-variant/40 uppercase">Class of 2022</span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="relative">
+<img class="w-20 h-20 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="close-up of a smiling young man in a casual denim shirt against a vibrant blurred outdoor background, high key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC57LNylWZytm8dhDCZzxh06z9ekQr_szDTtmfjD4ECxYGcipBXPCitV4zc-ew7OQwgdjfZRoARd02zpcZIL3Yb7mzwndukebKmKDKauMJABWgwwHUbdnzTj7RdMTT5Sjtmtqk75rXlrF_Zbcmd8OTEpW5oQNVZVswp5ox4HH1ZMuf22QI34c9kIriu85CiXI7fBTOaK9d_t3sVi5YS8jpXs0LEMEwM6DlpZpG1V69d8civSmoKocuORebio0qDJBIkr44zsYjD6hQJ"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg text-primary group-hover:text-secondary transition-colors">Marcus Thorne</h3>
+<p class="text-sm font-body text-on-surface-variant mb-2">Software Engineer II</p>
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">apartment</span>
+                                    Google
+                                </div>
+</div>
+</div>
+<div class="space-y-3 pt-4 border-t border-surface-container">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+                                Seattle, WA
+                            </div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-lg text-outline">school</span>
+                                B.Eng. Software Engineering
+                            </div>
+</div>
+<div class="mt-8 flex gap-3">
+<button class="flex-1 bg-secondary text-on-secondary py-3 rounded-lg font-label font-bold text-sm active:scale-95 transition-all">Connect</button>
+<button class="px-4 py-3 bg-secondary/5 text-secondary rounded-lg hover:bg-secondary/10 transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center">
+<nav class="flex items-center gap-2 p-1.5 bg-surface-container-low rounded-xl">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-secondary text-on-secondary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest transition-colors">3</button>
+<span class="mx-2 text-outline-variant">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest transition-colors">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-24 bg-slate-900 dark:bg-black w-full py-12 px-8 border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-manrope text-white font-bold text-xl">The Academic Lens</div>
+<p class="font-inter text-xs text-slate-400 max-w-xs">Building legacies through connection, mentorship, and excellence since 1924.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">About</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Contact</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-white underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Alumni Giving</a>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="font-inter text-xs text-slate-400 opacity-80">© 2024 The Academic Lens. All Rights Reserved.</p>
+</div>
+</footer>
+</main>
+</div>
+</body></html>
